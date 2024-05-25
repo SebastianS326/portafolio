@@ -1,3 +1,8 @@
+/* variables CSS personalizadas 
+representan la paleta de colores que
+se usara en la construccion de la pagina
+tiene diferentes tonos de gris, 
+desde un gris muy claro hasta el negro sólido */
 :root {
     --black50: #f6f6f6;
     --black100: #e7e7e7;
@@ -13,26 +18,52 @@
 
 }
 
+
+/* Establece el tamaño de fuente base para todo el documento 
+HTML en un 62.5% del tamaño predeterminado. Se utiliza 
+para facilitar el cálculo del tamaño de fuente en 
+relación con la unidad rem.
+*/
 html {
     font-size: 62.5%;
     text-align: center;
+    /* Define la alineación del texto dentro del elemento HTML como centrado */
     background-color: var(--black200);
+    /* Establece el color de fondo del documento */
 
 }
 
+/*
+Establece el tamaño de fuente predeterminado para el texto dentro del cuerpo del documento en 16 píxeles
+*/
 body {
     font-size: 16px;
     /* 1 rem = 10px */
 }
 
+/*
+Establece el espacio de relleno alrededor del contenido dentro del elemento <footer> en todas las direcciones
+*/
 footer {
     padding: 10rem;
 }
 
+/*
+Elimina el subrayado de los enlaces en el pie de pagina
+*/
+footer a {
+    text-decoration: none;
+}
+
+/*
+Se establece el tipo de fuente para los elementos con las clase .titles, .subtitles y .subsubtitles a 'Freeman'
+asi como el tamaño de la fuente y el color.
+--------------------------------------------------------------------------------------------------------------- */
 .titles {
     font-family: 'Freeman';
     font-size: 4rem;
     color: var(--black950);
+    /* Color mas oscuro */
 
 }
 
@@ -40,124 +71,199 @@ footer {
     font-family: 'Freeman';
     font-size: 3rem;
     color: var(--black800);
+    /* Color menos oscuro */
 }
 
 .subsubtitles {
     font-family: 'Freeman';
     font-size: 2.5rem;
     color: var(--black700);
+    /* Color mas claro */
 }
 
+/* --------------------------------------------------------------------------------------------------------------------*/
 
-
+/*
+Se establece el tipo de fuente para los elementos con las clase .simpleText a'Freeman'
+asi como el tamaño y color de la fuente 
+*/
 .simpleText {
     font-family: 'Freeman';
     font-size: 2rem;
     color: var(--black950);
     max-width: 900px;
+    /* Ancho máximo del elemento a 900px */
     margin: 0 auto;
+    /* margenes superior e inferior 0, márgenes laterales en automático (centra horizontalmente el texto) */
     text-align: justify;
+    /* texto esté alineado en ambos lados */
     padding: 1rem;
+    /* espacio adicional entre el texto y los bordes */
 }
 
-p {
-    font-size: 1.6rem;
-    color: var(--black950);
-}
-
+/*
+Color de fondo para los elementos de la clase .main-navigation
+*/
 .main-navigation {
     background-color: var(--black300);
 
 }
 
+/*
+estilo de todos los elementos <a> que se encuentren dentro del elemento con la clase .main-navigation
+*/
 .main-navigation a {
     color: var(--black950);
+    /* color del texto */
     text-decoration: none;
+    /* Elimina subrayado */
     font-family: 'Freeman';
+    /* Fuente */
     font-size: 2rem;
+    /* Tamaño de la fuente */
     padding: 1rem
+    /* espacio adicional entre el texto y los bordes */
 }
 
+/*
+Estilo para el estado de 'hover' de todos los elementos <a> que se encuentran dentro del elemento con la 
+clase .main-navigation
+*/
 .main-navigation a:hover {
     background-color: var(--black700);
+    /* Cambia el color de fondo al pasar el mouse */
     color: var(--black100);
+    /* Cambia el color del texto al pasar el mouse */
 }
 
+/*
+Estilo para el contenedor de enlaces de navegación
+*/
 .nav-links {
     display: flex;
+    /* Establece el contenedor como un flexbox */
     flex-direction: column;
+    /* Organiza los elementos en columna */
 
 }
 
+/*
+Estilo aplicado a elementos de la clase .nav-links cuando el ancho de la ventana es de al menos 768px
+*/
 @media (min-width: 768px) {
     .nav-links {
         flex-direction: row;
+         /* cambia la organizacion de los elementos a fila */
         justify-content: space-between;
+        /* Distribuye el espacio entre los elementos */
+
     }
 }
 
+/*
+Estilo aplicado a elementos de la clase .avatar
+*/
 .avatar {
     text-align: center;
+    /* Alinea el elemento al centro */
 }
 
+/*
+Estilo para elementos con la clase .photography
+*/
 .photografy {
     text-align: center;
+    /* Centra el contenido horizontalmente */
     border: 2px transparent;
+    /* Establece un borde de 2 píxeles transparente */
     padding: 1rem;
+    /* Agrega espacio de relleno alrededor del contenido */
 }
 
-.mi-imagen {
-    width: 300px;
-    height: auto;
-    border: 2px transparent;
-}
-
+/*
+Estilo para el contenedor de enlaces elementos de la clase .container-links
+*/
 .container-links {
     margin: 0 auto;
+    /* Establece márgenes automáticos en la parte superior e inferior y centraliza horizontalmente */
     max-width: 120rem;
+    /* Establece el ancho máximo del contenedor en 120rem */
 }
 
-footer a {
-    text-decoration: none;
-}
-
-
+/*
+Estilo aplicado al icono de inicio directamente tiene el id=homeicon, cuando el cursor está sobre él
+*/
 #homeicon:hover svg path {
     stroke: var(--black100);
+    /* Cambia el color del trazo del icono a var(--black100) (Gris Claro) */
 }
 
+/*
+Estilo para etiquetas de la clase botón (.cta-button)
+*/
 .cta-button {
     font-family: 'Freeman';
+    /* Utiliza la fuente 'Freeman' */
     background-color: var(--black300);
+    /* color de fondo */
     color: var(--black950);
+    /* color del texto */
     padding: 1rem 3rem;
+    /* espacio adicional entre el texto y los bordes */
     margin-top: 1rem;
+    /* margen superior del botón */
     font-size: 1.5rem;
+    /* Tamaño de la fuente */
     text-decoration: none;
+    /* Elimina subrayado */
     border-radius: 2rem;
+    /* radio de borde para darle esquinas redondeadas */
+
 }
 
+/*
+ Estilo para etiquetas de la clase botón (.cta-button) cuando el cursor está sobre él
+*/
 .cta-button:hover {
     background-color: var(--black700);
+    /* Cambia el color de fondo cuando se pasa el cursor */
     color: var(--black100);
+    /* Cambia el color del texto cuando se pasa el cursor */
 }
 
-
+/*
+Estilo para el formulario de envío de mensajes (clase .sendMessageForm)
+*/
 .sendMessageForm {
     background-color: var(--black300);
+    /* color de fondo */
     width: min(60rem, 100%);
+    /* Establece el ancho máximo del contenedor en 60rem  o 100% del ancho del contenedor*/
     margin: 0 auto;
+    /* Centra horizontalmente el formulario */
     border-radius: 1rem;
+    /* esquinas redondeadas al formulario */
 }
 
+/*
+Estilo para los campos de entrada del formulario (clase .inputCamp)
+*/
 .inputCamp {
     margin-bottom: 1rem;
+    /* Establece un margen inferior de 1rem para separar los campos de entrada */
+
 }
 
+/*
+Estilo para las etiquetas de los campos de entrada del formulario de la clase .inputCamp
+*/
 .inputCamp label {
     color: var(--black950);
+    /* color del texto de la etiqueta */
     font-weight: bold;
-    margin-bottom: .5rem;
+    /* Establece el peso de la fuente en negrita */
+    margin-bottom: .5rem; 
+    /* margen inferior para separar las etiquetas */
 }
 
 .input {
