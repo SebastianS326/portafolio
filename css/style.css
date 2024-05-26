@@ -122,7 +122,7 @@ estilo de todos los elementos <a> que se encuentren dentro del elemento con la c
     font-size: 2rem;
     /* Tamaño de la fuente */
     padding: 1rem
-    /* espacio adicional entre el texto y los bordes */
+        /* espacio adicional entre el texto y los bordes */
 }
 
 /*
@@ -153,7 +153,7 @@ Estilo aplicado a elementos de la clase .nav-links cuando el ancho de la ventana
 @media (min-width: 768px) {
     .nav-links {
         flex-direction: row;
-         /* cambia la organizacion de los elementos a fila */
+        /* cambia la organizacion de los elementos a fila */
         justify-content: space-between;
         /* Distribuye el espacio entre los elementos */
 
@@ -262,53 +262,95 @@ Estilo para las etiquetas de los campos de entrada del formulario de la clase .i
     /* color del texto de la etiqueta */
     font-weight: bold;
     /* Establece el peso de la fuente en negrita */
-    margin-bottom: .5rem; 
+    margin-bottom: .5rem;
     /* margen inferior para separar las etiquetas */
 }
 
+/*
+Estilo para los campos de entrada del formulario de la clase .inputCamp
+*/
 .input {
     width: 100%;
+    /* Establece el ancho máximo del contenedor en 100% del ancho del contenedor */
     border: none;
+    /* Elimina el borde */
     padding: 0.5rem;
+    /* Agrega espacio de relleno alrededor del contenido */
     border-radius: 0.5rem;
+    /* esquinas redondeadas al formulario */
 }
 
+/*
+Estilo para el contenedor del blog de la clase .bogContainer
+*/
 .blogContainer {
     display: grid;
+    /* Establece el contenedor como un grid */
     grid-template-columns: 1fr;
+    /* Organiza los elementos en una columna */
     gap: 20px;
+    /* Agrega espacio de relleno alrededor del contenido */
     padding: 20px;
+    /* espacio adicional entre el texto y los bordes */
+
+
 }
 
+/*
+Estilo para el contenedor del blog de la clase .bogContainer cuando el ancho de la ventana es de al menos 600px
+*/
 @media (min-width: 600px) {
     .blogContainer {
         grid-template-columns: 1fr 1fr;
+        /* Organiza los elementos en dos columnas */
     }
 }
 
+/*
+Estilo para el contenedor del blog de la clase .bogContainer cuando el ancho de la ventana es de al menos 900px
+*/
 @media (min-width: 900px) {
     .blogContainer {
         grid-template-columns: 1fr 1fr 1fr;
+        /* Organiza los elementos en tres columnas */
     }
 }
 
+/*
+Estilo para el contenedor del blog de la clase .bogContainer cuando el ancho de la ventana es de al menos 1200px
+*/
 @media (min-width: 1200px) {
     .blogContainer {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* Organiza los elementos en cuatro columnas */
     }
 }
 
+
 .articleBlog {
     background: var(--black300);
+    /* color de fondo a gris claro */
     padding: 2rem;
+    /* espacio adicional entre el texto y los bordes */
     border-radius: 5px;
+    /* borde redondeado */
     display: flex;
+    /* Establece el contenedor como un flexbox */
     flex-direction: column;
+    /* Organiza los elementos en columna */
     justify-content: space-between;
+    /* Distribuye el espacio entre los elementos */
+
 }
 
+/*
+Estilo que se aplica a las imágenes que están dentro de un elemento <article>. 
+*/
 article img {
     max-width: 100%;
+    /* asegura que la anchura máxima de la imagen no exceda el 100% del contenedor padre */
     height: auto;
+    /* antiene la proporción de la imagen cuando se ajusta la anchura */
     border-radius: 5px;
+    /* borde redondeado */
 }

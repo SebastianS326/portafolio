@@ -1,134 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyectos</title> <!-- Titulo de la pagina -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Freeman&display=swap"
+            rel="stylesheet">
+        <link rel="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
-    <header>
-        <h1 class="titles">¡Echale un vistazo a estos proyectos!</h1>
-    </header>
+    <body>
+        <header>
+            <h1 class="titles">¡Echale un vistazo a estos proyectos!</h1> <!-- Titulo de primer nivel del documento -->
+        </header>
 
-    <section class="main-navigation">
-        <nav class="nav-links container-links" aria-label="Navegación Principal">
-            <a href="index.html" id="homeicon" class="cta-button">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-up" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2c.641 0 1.212 .302 1.578 .771" />
-                    <path d="M20.136 11.136l-8.136 -8.136l-9 9h2v7a2 2 0 0 0 2 2h6.344" />
-                    <path d="M19 22v-6" />
-                    <path d="M22 19l-3 -3l-3 3" />
-                </svg>
-            </a>
-            <a href="sobremi.html" class="cta-button">Sobre mí</a>
-            <a href="proyectos.html" class="cta-button">Proyectos</a>
-            <a href="experiencia.html" class="cta-button">Experiencia</a>
-            <a href="blog.html" class="cta-button">Blog</a>
-            <a href="contacto.html" class="cta-button">Contacto</a>
-        </nav>
-    </section>
-
-    <main>
-        <section aria-labelledby="projects-title">
-            <h2 id="projects-title" class="subtitles">Proyectos</h2>
-            <article aria-labelledby="portal-web-title">
-                <h3 id="portal-web-title" class="subsubtitles">Portal Web Empresarial</h3>
-                <p class="simpleText">
-                    <strong>Descripción:</strong> Desarrollo de una página web para la empresa en la que actualmente laboro utilizando HTML y CSS, con el objetivo 
-                    de proporcionar una plataforma sencilla y accesible que ofreciera información relevante sobre la empresa, sus servicios 
-                    y datos de contacto.
-                    <br>
-                    <strong>Enlace:</strong> 
-                    <a href="https://www.pcshop-col.com/" target="_blank" rel="noopener noreferrer" class="simpleText">P.C.SHOP-COL</a>
-                </p>
-            </article>
-
-            <article aria-labelledby="ecomerce-title">
-                <h3 id="ecomerce-title" class="subsubtitles">Ecomerce</h3>
-                <p class="simpleText">
-                    <strong>Descripción:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis elit vel nisl imperdiet sollicitudin. 
-                    Cras scelerisque justo eu magna ultrices, vitae finibus nisi cursus. Nullam placerat imperdiet arcu, sed fringilla dolor pharetra quis. Etiam 
-                    sit amet molestie orci. Duis nisl leo, pharetra sed tortor id, molestie suscipit enim. Maecenas dignissim porttitor risus, imperdiet eleifend 
-                    tellus hendrerit eu. Curabitur eget pharetra nibh, quis euismod velit.
-                    <br>
-                    <strong>Enlace:</strong> 
-                    <a href="https://es.lipsum.com/feed/html" target="_blank" rel="noopener noreferrer" class="simpleText">Lorem Ipsum</a>
-                </p>
-            </article>
-
-            <article aria-labelledby="coffe-web-title">
-                <h3 id="coffe-web-title" class="subsubtitles">Blog de Cafe</h3>
-                <p class="simpleText">
-                    <strong>Descripción:</strong> Sed aliquet nec diam quis iaculis. Aliquam eleifend sem quis odio tincidunt tincidunt. Cras ut scelerisque nisl. 
-                    Donec dignissim nisl iaculis pulvinar tristique. Duis augue magna, consectetur at risus non, vulputate iaculis augue. Interdum et malesuada 
-                    fames ac ante ipsum primis in faucibus. Cras sit amet sollicitudin arcu, sit amet commodo libero. Proin nec lacinia est. Nunc odio elit, 
-                    ullamcorper id purus at, iaculis luctus ligula. Nulla et enim turpis. Nulla facilisi.
-                    <br>
-                    <strong>Enlace:</strong> 
-                    <a href="https://es.lipsum.com/feed/html" target="_blank" rel="noopener noreferrer" class="simpleText">Lorem Ipsum</a>
-                </p>
-            </article>
-
-
+        <section class="main-navigation"> <!-- seccion contenedora de la barra de navegacion -->
+            <nav class="nav-links container-links"
+                aria-label="Navegación Principal">
+                <a href="index.html" id="homeicon" class="cta-button"> <!-- icono SVG del enlace a home -->
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-home-up" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M9 21v-6a2 2 0 0 1 2 -2h2c.641 0 1.212 .302 1.578 .771" />
+                        <path
+                            d="M20.136 11.136l-8.136 -8.136l-9 9h2v7a2 2 0 0 0 2 2h6.344" />
+                        <path d="M19 22v-6" />
+                        <path d="M22 19l-3 -3l-3 3" />
+                    </svg>
+                </a>
+                <a href="sobremi.html" class="cta-button">Sobre mí</a> <!-- enlace a otra pagina interna -->
+                <a href="proyectos.html" class="cta-button">Proyectos</a>
+                <a href="experiencia.html" class="cta-button">Experiencia</a>
+                <a href="blog.html" class="cta-button">Blog</a>
+                <a href="contacto.html" class="cta-button">Contacto</a>
+            </nav>
         </section>
 
-    </main>
+        <main> <!-- contenido principal de la pagina -->
+            <section aria-labelledby="projects-title"> <!-- seccion contenedora de los proyectos -->
+                <h2 id="projects-title" class="subtitles">Proyectos</h2>
+                <article aria-labelledby="portal-web-title"> <!-- proyecto tipo articulo -->
+                    <h3 id="portal-web-title" class="subsubtitles">Portal Web
+                        Empresarial</h3>
+                    <p class="simpleText">
+                        <strong>Descripción:</strong> Desarrollo de una página
+                        web para la empresa en la que actualmente laboro
+                        utilizando HTML y CSS, con el objetivo
+                        de proporcionar una plataforma sencilla y accesible que
+                        ofreciera información relevante sobre la empresa, sus
+                        servicios
+                        y datos de contacto.
+                        <br>
+                        <strong>Enlace:</strong>
+                        <a href="https://www.pcshop-col.com/" target="_blank" 
+                            rel="noopener noreferrer"
+                            class="simpleText">P.C.SHOP-COL</a> <!-- Enlace a pagina Externa -->
+                    </p>
+                </article>
 
-    <footer class="footer">
-        <a href="https://wa.me/qr/L6U7TSVVG3EJH1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44"
-                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#43A549" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                <path
-                    d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
-            </svg>
-        </a>
+                <article aria-labelledby="ecomerce-title">
+                    <h3 id="ecomerce-title" class="subsubtitles">Ecomerce</h3>
+                    <p class="simpleText">
+                        <strong>Descripción:</strong> Lorem ipsum dolor sit
+                        amet, consectetur adipiscing elit. Curabitur mattis elit
+                        vel nisl imperdiet sollicitudin.
+                        Cras scelerisque justo eu magna ultrices, vitae finibus
+                        nisi cursus. Nullam placerat imperdiet arcu, sed
+                        fringilla dolor pharetra quis. Etiam
+                        sit amet molestie orci. Duis nisl leo, pharetra sed
+                        tortor id, molestie suscipit enim. Maecenas dignissim
+                        porttitor risus, imperdiet eleifend
+                        tellus hendrerit eu. Curabitur eget pharetra nibh, quis
+                        euismod velit.
+                        <br>
+                        <strong>Enlace:</strong>
+                        <a href="https://es.lipsum.com/feed/html"
+                            target="_blank" rel="noopener noreferrer"
+                            class="simpleText">Lorem Ipsum</a>
+                    </p>
+                </article>
 
-        <a href="https://www.facebook.com/profile.php?id=61557071627526&mibextid=ZbWKwL">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44"
-                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#205CDC" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-            </svg>
-        </a>
+                <article aria-labelledby="coffe-web-title">
+                    <h3 id="coffe-web-title" class="subsubtitles">Blog de
+                        Cafe</h3>
+                    <p class="simpleText">
+                        <strong>Descripción:</strong> Sed aliquet nec diam quis
+                        iaculis. Aliquam eleifend sem quis odio tincidunt
+                        tincidunt. Cras ut scelerisque nisl.
+                        Donec dignissim nisl iaculis pulvinar tristique. Duis
+                        augue magna, consectetur at risus non, vulputate iaculis
+                        augue. Interdum et malesuada
+                        fames ac ante ipsum primis in faucibus. Cras sit amet
+                        sollicitudin arcu, sit amet commodo libero. Proin nec
+                        lacinia est. Nunc odio elit,
+                        ullamcorper id purus at, iaculis luctus ligula. Nulla et
+                        enim turpis. Nulla facilisi.
+                        <br>
+                        <strong>Enlace:</strong>
+                        <a href="https://es.lipsum.com/feed/html"
+                            target="_blank" rel="noopener noreferrer"
+                            class="simpleText">Lorem Ipsum</a>
+                    </p>
+                </article>
 
-        <a href="https://www.linkedin.com/in/sebasti%C3%A1n-serna-valencia-a2152922b">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44"
-                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1681DF" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-                <path d="M8 11l0 5" />
-                <path d="M8 8l0 .01" />
-                <path d="M12 16l0 -5" />
-                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-            </svg>
-        </a>
+            </section> <!-- fin de la seccion de articulos -->
 
-        <a href="https://github.com/SebastianS326">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="44"
-                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#691D9B" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-            </svg>
-        </a>
+        </main>
 
-    </footer>
+        <footer class="footer"> <!-- pie de pagina -->
+            <a href="https://wa.me/qr/L6U7TSVVG3EJH1"> <!-- icono SVG como enlace a red social -->
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-whatsapp"
+                    width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#43A549" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path
+                        d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
+            </a>
 
+            <a
+                href="https://www.facebook.com/profile.php?id=61557071627526&mibextid=ZbWKwL">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-facebook"
+                    width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#205CDC" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
 
-</body>
+            <a
+                href="https://www.linkedin.com/in/sebasti%C3%A1n-serna-valencia-a2152922b">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-linkedin"
+                    width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#1681DF" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                    <path d="M8 11l0 5" />
+                    <path d="M8 8l0 .01" />
+                    <path d="M12 16l0 -5" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                </svg>
+            </a>
+
+            <a href="https://github.com/SebastianS326">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-github" width="44"
+                    height="44" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="#691D9B" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+            </a>
+
+        </footer> <!-- fin del pie de pagina -->
+
+    </body>
 
 </html>
